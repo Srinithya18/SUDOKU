@@ -16,12 +16,13 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Hello, world!</title>
+    <title>SUDOKU SOLVER</title>
   </head>
   <body>
-    <div class="container mt-2" style="border: 2px solid black">
+    <h2 class="display-2 text-center">SUDOKU SOLVER</h2>
+    <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col-md-4 offset-md-4">
                 <div class="grid-container">
                     <!-- ROW 1 -->
                     <div class="grid-item">
@@ -279,15 +280,12 @@
                 </div>
             </div>
         </div>
-        <div class="row m-3 d-flex justify-content-around">
-            <div class="col">
-              <button type="button" class="btn btn-primary" id="get"> GET VALUES</button>
-            </div>
-            <div class="col">
-              <button type="button" class="btn btn-secondary" id="clear"> CLEAR</button>
-            </div>
-            <div class="col">
-              <button type="button" class="btn btn-success" id="fill"> FILL RANDOM</button>
+        <div class="row">
+            <div class="col-4 offset-md-4">
+              <button type="button" class="btn btn-primary m-1" id="get"> GET VALUES</button>
+              <button type="button" class="btn btn-secondary m-1" id="clear"> CLEAR</button>
+              <button type="button" class="btn btn-success m-1" id="fill"> FILL RANDOM</button>
+
             </div>
         </div>
     </div>
