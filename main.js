@@ -156,10 +156,18 @@ var isValidSudoku = function(board) {
     }
     return true
 };
+document.getElementById("status").style.display="none"
 function check(){
     arr=getVal()
     var x=isValidSudoku(arr)
     console.log(x)
+    if(x===true)
+        document.getElementById("status").classList.add("alert-info")
+    else
+        document.getElementById("status").classList.add("alert-info")
+    document.getElementById("status").style.display="block"
+    
+    document.getElementById("status").innerHTML=x;
 }
 
 document.getElementById("get").onclick = check;
